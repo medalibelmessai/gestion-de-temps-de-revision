@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Révision Sfax — Blocs & prières</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <h1>Workflow de révision · Sfax</h1>
+          <p class="lede">Quatre blocs intenses, calés sur les prières. Cursor comme tuteur, jamais pendant le repos.</p>
+        </div>
+        <div class="clock-box">
+          <div class="clock" id="clock">--:--:--</div>
+          <div class="date" id="date"></div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <p class="hero-kicker" id="kicker">En cours</p>
+        <h2 id="title">…</h2>
+        <p id="subtitle"></p>
+        <div class="countdown">
+          <span>Reste <strong id="remaining">—</strong></span>
+          <span id="next"></span>
+        </div>
+      </section>
+
+      <section class="timeline" id="timeline" aria-label="Planning du jour"></section>
+
+      <section class="prompts" id="prompts"></section>
+
+      <p class="note">
+        Clique un créneau pour prévisualiser ses prompts (utile pour apprendre le code). Clique à nouveau pour
+        revenir à l’heure réelle de Tunis. Ouvre <code>cours-exemple.md</code> dans Cursor pour tester les @fichiers.
+      </p>
+    </div>
+    <script src="js/schedule.js"></script>
+    <script src="js/prompts.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
